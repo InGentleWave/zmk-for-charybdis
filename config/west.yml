@@ -6,9 +6,9 @@ manifest:
       url-base: https://github.com/DoctorWangWang
     - name: bunnyspa # zmk-input-processor-threshold
       url-base: https://github.com/bunnyspa
-    - name: zzeneg # <-- required for Raw HID module
+    - name: zzeneg # KeyPeek - required for Raw HID module
       url-base: https://github.com/zzeneg
-    - name: srwi # <-- required for KeyPeek module
+    - name: srwi # KeyPeek - required for KeyPeek module
       url-base: https://github.com/srwi
   projects:
     - name: zmk
@@ -21,10 +21,10 @@ manifest:
     - name: zmk-input-processor-threshold
       remote: bunnyspa
       revision: main
-    - name: zmk-raw-hid # <-- Raw HID module
+    - name: zmk-raw-hid # KeyPeek - Raw HID module
       remote: zzeneg
       revision: main
-    - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
+    - name: zmk-keypeek-layer-notifier # KeyPeek - KeyPeek module
       remote: srwi
       revision: master
       
