@@ -48,7 +48,7 @@
             layers = <0>;
         };
 
-        Tab_combo {
+        TAB_combo {
             bindings = <&kp TAB>;
             key-positions = <1 2>;
         };
@@ -58,11 +58,21 @@
             key-positions = <10 1 2>;
         };
 
-        LCtrl_combo {
+        LCTL_combo {
             bindings = <&kp LCTRL>;
             key-positions = <12 13>;
             slow-release;
             layers = <0>;
+        };
+
+        LSFT_combo {
+            bindings = <&kp LSHFT>;
+            key-positions = <11 12>;
+        };
+
+        LART_combo {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <10 11>;
         };
     };
 
