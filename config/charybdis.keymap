@@ -40,9 +40,24 @@
     combos {
         compatible = "zmk,combos";
 
-        Language_Change {
+        Language_Change_combo {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <11 13>;
+        };
+
+        Tab_combo {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
+
+        LSFT_Tab_combo {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <10 1 2>;
+        };
+
+        LCtrl_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <12 13>;
         };
     };
 
@@ -60,10 +75,10 @@
 
         layer_1 {
             bindings = <
-&kp F1          &kp F2     &kp F3        &kp F4    &kp F5     &kp F6     &kp F7            &kp F8         &kp F9     &kp F10
-&kp N1          &kp N2     &kp N3        &kp N4    &kp N5     &kp N6     &kp N7            &kp N8         &kp N9     &kp N0
-&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp CAPS  &kp TAB    &kp MINUS  &kp LEFT_BRACKET  &kp SEMICOLON  &kp COMMA  &kp BACKSLASH
-                           &none         &none     &none      &kp F11    &kp F12
+&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none  &none  &none  &none  &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &none  &none  &none  &none  &none
+&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &none  &none  &none  &none  &none
+                                &none         &none            &none      &none  &none
             >;
         };
 
