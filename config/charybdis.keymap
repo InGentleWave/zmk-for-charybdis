@@ -37,6 +37,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Language_Change {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <11 13>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
