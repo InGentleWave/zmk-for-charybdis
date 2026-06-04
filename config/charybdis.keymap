@@ -116,15 +116,6 @@
             >;
         };
 
-        mouse {
-            bindings = <
-&none  &none  &none  &none  &none    &none  &none     &none     &none     &none
-&none  &none  &none  &none  &none    &none  &none     &none     &none     &none
-&none  &none  &none  &none  &none    &none  &mkp MB1  &mkp MB3  &mkp MB2  &none
-              &none  &none  &none    &none  &none
-            >;
-        };
-
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -140,6 +131,15 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&none  &none  &none  &none  &none    &none  &none     &none     &none     &none
+&none  &none  &none  &none  &none    &none  &none     &none     &none     &none
+&none  &none  &none  &none  &none    &none  &mkp MB1  &mkp MB3  &mkp MB2  &none
+              &none  &none  &none    &none  &none
             >;
         };
 
