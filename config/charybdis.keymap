@@ -42,6 +42,7 @@
         Language_Change_combo {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <11 13>;
+            layers = <0>;
         };
 
         Tab_combo {
@@ -57,13 +58,15 @@
         LCtrl_combo {
             bindings = <&kp LCTRL>;
             key-positions = <12 13>;
+            slow-release;
+            layers = <0>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        base {
             bindings = <
 &kp Q  &kp W  &kp E                 &kp R        &kp T          &kp Y       &kp U         &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D                 &kp F        &kp G          &kp H       &kp J         &kp K      &kp L    &mt SINGLE_QUOTE SEMICOLON
@@ -72,7 +75,7 @@
             >;
         };
 
-        navigation_layer {
+        navigation {
             bindings = <
 &none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none  &none  &none  &none  &none
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &none  &none  &none  &none  &none
@@ -81,7 +84,7 @@
             >;
         };
 
-        number_layer {
+        number {
             bindings = <
 &kp GRAVE         &kp N7        &kp N8        &kp N9        &kp NUMBER_0         &none  &none  &none  &none  &none
 &kp LEFT_BRACKET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET    &none  &none  &none  &none  &none
@@ -90,12 +93,12 @@
             >;
         };
 
-        layer_3 {
+        bluetooth {
             bindings = <
-&none  &none  &none  &none  &none    &none       &none         &none         &none         &none
-&none  &none  &none  &none  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-&none  &none  &none  &none  &none    &none       &none         &none         &none         &none
-              &none  &none  &none    &none       &none
+&none  &none  &none  &none  &none           &none       &none         &none         &none         &none
+&none  &none  &none  &none  &kp LEFT_GUI    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&none  &none  &none  &none  &none           &none       &none         &none         &none         &none
+              &none  &none  &none           &none       &none
             >;
         };
 
@@ -214,5 +217,14 @@
                 
                 
         };*/
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        bt_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 };
