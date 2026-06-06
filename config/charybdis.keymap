@@ -36,14 +36,12 @@
             bindings = <&kp LCTRL>;
             key-positions = <12 13>;
             slow-release;
-            layers = <0>;
         };
 
         LSFT_combo {
             bindings = <&kp LSHFT>;
             key-positions = <11 12>;
             slow-release;
-            layers = <0>;
         };
 
         LART_combo {
@@ -56,21 +54,18 @@
             bindings = <&kp LS(LCTRL)>;
             key-positions = <11 13 12>;
             slow-release;
-            layers = <0>;
         };
 
         LSA_combo {
             bindings = <&kp LS(LALT)>;
             key-positions = <10 11 12>;
             slow-release;
-            layers = <0>;
         };
 
         LCA_combo {
             bindings = <&kp LC(LALT)>;
             key-positions = <10 13>;
             slow-release;
-            layers = <0>;
         };
 
         Meh_combo {
@@ -81,7 +76,6 @@
         ESC_combo {
             bindings = <&kp ESC>;
             key-positions = <3 4>;
-            layers = <0>;
         };
     };
 
