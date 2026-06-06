@@ -107,10 +107,10 @@
 
         navigation {
             bindings = <
-&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none         &none     &none               &none                 &none
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &kp C_VOL_UP  &none     &kp C_AC_SCROLL_UP  &kp C_AC_SCROLL_DOWN  &none
-&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &kp C_VOL_DN  &mkp MB1  &mkp MB3            &mkp MB2              &mkp MB4
-                                &none         &none            &none      &none         &none
+&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none         &none           &none           &none         &msc MOVE_Y(-5)
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &kp C_VOL_UP  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &kp C_VOL_DN  &mkp MB1        &mkp MB3        &mkp MB2      &mmv MOVE_DOWN
+                                &none         &none            &none      &mkp MB4      &mkp MB5
             >;
         };
 
@@ -152,10 +152,10 @@
 
         mouse {
             bindings = <
-&none  &none  &none         &none        &none          &none         &none       &none                 &none               &none
-&none  &none  &none         &none        &none          &kp C_VOL_UP  &none       &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP  &none
-&none  &none  &none         &none        &none          &kp C_VOL_DN  &mkp MB1    &mkp MB3              &mkp MB2            &kp C_AC_BACK
-              &mt DEL BSPC  &lt 1 SPACE  &lt 2 ENTER    &kp DEL       &lt 3 BSPC
+&none  &none  &none  &none  &none    &none         &none     &none     &none     &none
+&none  &none  &none  &none  &none    &kp C_VOL_UP  &none     &none     &none     &mkp MB5
+&none  &none  &none  &none  &none    &kp C_VOL_DN  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB4
+              &mo 0  &mo 1  &mo 2    &none         &mo 3
             >;
         };
 
