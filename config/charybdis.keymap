@@ -161,7 +161,7 @@
 &none  &none  &none  &none  &none    &none         &none     &none                 &none               &none
 &none  &none  &none  &none  &none    &kp C_VOL_UP  &none     &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP  &none
 &none  &none  &none  &none  &none    &kp C_VOL_DN  &mkp MB1  &mkp MB3              &mkp MB2            &kp C_AC_BACK
-              &none  &none  &none    &none         &none
+              &none  &mo 1  &none    &none         &none
             >;
         };
 
