@@ -77,6 +77,12 @@
             bindings = <&kp LS(LC(LALT))>;
             key-positions = <10 11 12 13>;
         };
+
+        ESC_combo {
+            bindings = <&kp ESC>;
+            key-positions = <3 4>;
+            layers = <0>;
+        };
     };
 
     behaviors {
