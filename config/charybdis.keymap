@@ -110,7 +110,7 @@
 &none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none         &none           &none           &none         &none
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &kp C_VOL_UP  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &kp C_VOL_DN  &mkp MB1        &mkp MB3        &mkp MB2      &none
-                                &mo 3         &none            &none      &mkp MB4      &mkp MB5
+                                &mo 3         &none            &none      &mkp MB5      &mkp MB4
             >;
         };
 
