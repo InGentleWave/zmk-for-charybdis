@@ -13,24 +13,7 @@
 &mt {
 };
 
-&ht_sft {
-};
-
 / {
-    behaviors {
-        ht_sft: hold_tap_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_SHIFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
-            require-prior-idle-ms = <130>;
-            flavor = "tap-preferred";
-        };
-    };
-
     macros {
         To1_macro: To1_macro {
             compatible = "zmk,behavior-macro";
