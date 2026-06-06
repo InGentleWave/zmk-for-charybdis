@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         Language_Change_combo {
-            bindings = <&kp RIGHT_ALT>;
+            bindings = <&kp RALT>;
             key-positions = <11 13>;
             layers = <0>;
         };
@@ -47,9 +47,35 @@
         };
 
         LART_combo {
-            bindings = <&kp LEFT_ALT>;
+            bindings = <&kp LALT>;
             key-positions = <10 11>;
             slow-release;
+        };
+
+        LSC_combo {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <11 13 12>;
+            slow-release;
+            layers = <0>;
+        };
+
+        LSA_combo {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <10 11 12>;
+            slow-release;
+            layers = <0>;
+        };
+
+        LCA_combo {
+            bindings = <&kp LC(LALT)>;
+            key-positions = <10 13>;
+            slow-release;
+            layers = <0>;
+        };
+
+        Meh_combo {
+            bindings = <&kp LS(LC(LALT))>;
+            key-positions = <10 11 12 13>;
         };
     };
 
