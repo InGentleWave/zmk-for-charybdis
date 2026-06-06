@@ -69,6 +69,8 @@
         LSFT_combo {
             bindings = <&kp LSHFT>;
             key-positions = <11 12>;
+            slow-release;
+            layers = <0>;
         };
 
         LART_combo {
