@@ -31,47 +31,6 @@
             key-positions = <10 1 2>;
         };
 
-        LCTL_combo {
-            bindings = <&kp LCTRL>;
-            key-positions = <12 13>;
-            slow-release;
-        };
-
-        LSFT_combo {
-            bindings = <&kp LSHFT>;
-            key-positions = <11 12>;
-            slow-release;
-        };
-
-        LART_combo {
-            bindings = <&kp LALT>;
-            key-positions = <10 11>;
-            slow-release;
-        };
-
-        LSC_combo {
-            bindings = <&kp LS(LCTRL)>;
-            key-positions = <11 13 12>;
-            slow-release;
-        };
-
-        LSA_combo {
-            bindings = <&kp LS(LALT)>;
-            key-positions = <10 11 12>;
-            slow-release;
-        };
-
-        LCA_combo {
-            bindings = <&kp LC(LALT)>;
-            key-positions = <10 13>;
-            slow-release;
-        };
-
-        Meh_combo {
-            bindings = <&kp LS(LC(LALT))>;
-            key-positions = <10 11 12 13>;
-        };
-
         ESC_combo {
             bindings = <&kp ESC>;
             key-positions = <3 4>;
@@ -128,9 +87,9 @@
         base {
             bindings = <
 &kp Q        &kp W        &kp E         &kp R               &kp T          &kp Y         &kp U         &kp I         &kp O        &kp P
-&hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F        &kp G          &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON
+&hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F        &kp G          &kp H         &hmr LSHFT J  &hmr LCTRL K  &hmr LALT L  &hmr LGUI SEMICOLON
 &kp Z        &kp X        &kp C         &kp V               &kp B          &kp N         &kp M         &kp COMMA     &kp DOT      &mt SINGLE_QUOTE FSLH
-                          &mt DEL BSPC  &lt 1 SPACE         &lt 2 ENTER    &mt HOME DEL  &lt 1 BSPC
+                          &mt DEL BSPC  &lt 1 SPACE         &lt 2 ENTER    &lt 3 DEL  &lt 1 BSPC
             >;
         };
 
