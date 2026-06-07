@@ -100,7 +100,7 @@
 &ht_sft LS(Q) Q  &ht_sft LS(W) W  &ht_sft LS(E) E  &ht_sft LS(R) R  &ht_sft LS(T) T    &ht_sft LS(Y) Y  &ht_sft LS(U) U  &ht_sft LS(I) I          &ht_sft LS(O) O      &ht_sft LS(P) P
 &ht_sft LS(A) A  &ht_sft LS(S) S  &ht_sft LS(D) D  &ht_sft LS(F) F  &ht_sft LS(G) G    &ht_sft LS(H) H  &ht_sft LS(J) J  &ht_sft LS(K) K          &ht_sft LS(L) L      &mt SINGLE_QUOTE SEMICOLON
 &ht_sft LS(Z) Z  &ht_sft LS(X) X  &ht_sft LS(C) C  &ht_sft LS(V) V  &ht_sft LS(B) B    &ht_sft LS(N) N  &ht_sft LS(M) M  &ht_sft LS(COMMA) COMMA  &ht_sft LS(DOT) DOT  &ht_sft LS(FSLH) FSLH
-                                  &mt DEL BSPC     &lt 1 SPACE      &lt 2 ENTER        &kp DELETE       &lt 1 BSPC
+                                  &mt DEL BSPC     &lt 1 SPACE      &lt 2 ENTER        &mt HOME DEL     &lt 1 BSPC
             >;
         };
 
