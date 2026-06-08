@@ -39,7 +39,6 @@
         MB3_combo {
             bindings = <&mkp MB3>;
             key-positions = <16 18>;
-            layers = <4>;
         };
     };
 
@@ -91,7 +90,16 @@
 &kp Q        &kp W        &kp E           &kp R         &kp T          &kp Y      &kp U         &kp I         &kp O        &kp P
 &hml LGUI A  &hml LALT S  &hml LSHFT D    &hml LCTRL F  &kp G          &kp H      &hmr LCTRL J  &hmr LSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
 &kp Z        &kp X        &kp C           &kp V         &kp B          &kp N      &kp M         &kp COMMA     &kp DOT      &mt SINGLE_QUOTE FSLH
-                          &mt LSHFT BSPC  &lt 4 SPACE   &lt 1 ENTER    &lt 3 DEL  &lt 4 BSPC
+                          &mt LSHFT BSPC  &lt 1 SPACE   &lt 2 ENTER    &lt 3 DEL  &lt 4 BSPC
+            >;
+        };
+
+        nav {
+            bindings = <
+&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &none    &none  &none      &none      &none     &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none    &none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &none    &none  &none      &none      &none     &none
+                                &none         &none            &none    &none  &none
             >;
         };
 
@@ -100,25 +108,16 @@
 &ht_sft LS(GRAVE) GRAVE                &ht_sft LS(N7) N7  &ht_sft LS(N8) N8      &ht_sft LS(N9) N9  &ht_sft LS(N0) N0                          &none  &none  &none  &none  &none
 &ht_sft LS(LEFT_BRACKET) LEFT_BRACKET  &ht_sft LS(N4) N4  &ht_sft LS(N5) N5      &ht_sft LS(N6) N6  &ht_sft LS(RIGHT_BRACKET) RIGHT_BRACKET    &none  &none  &none  &none  &none
 &ht_sft LS(MINUS) MINUS                &ht_sft LS(N1) N1  &ht_sft LS(N2) N2      &ht_sft LS(N3) N3  &ht_sft LS(EQUAL) EQUAL                    &none  &none  &none  &none  &none
-                                                          &ht_sft LS(BSLH) BSLH  &none              &none                                      &none  &none
+                                                          &ht_sft LS(BSLH) BSLH  &mo 5              &none                                      &none  &none
             >;
         };
 
-        sys {
+        fn {
             bindings = <
-&bootloader  &sys_reset  &none  &none  &none    &bt BT_CLR    &none         &none         &sys_reset    &bootloader
-&none        &none       &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none        &none       &none  &none  &none    &none         &none         &none         &none         &none
-                         &none  &none  &none    &none         &none
-            >;
-        };
-
-        nav {
-            bindings = <
-&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none  &none      &none      &none     &none
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
-&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &none  &none      &none      &none     &none
-                                &mo 2         &none            &none      &none  &none
+&none   &none   &none   &none   &none     &none    &none    &none   &none   &none
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&none   &none   &none   &none   &none     &kp F11  &kp F12  &none   &none   &none
+                &none   &none   &none     &none    &mo 5
             >;
         };
 
@@ -131,57 +130,12 @@
             >;
         };
 
-        fn {
+        sys {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans
+&bootloader  &sys_reset  &none  &none  &none    &bt BT_CLR    &none         &none         &sys_reset    &bootloader
+&none        &none       &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none        &none       &none  &none  &none    &none         &none         &none         &none         &none
+                         &none  &none  &none    &none         &none
             >;
         };
 
