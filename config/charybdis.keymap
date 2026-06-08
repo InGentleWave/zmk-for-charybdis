@@ -99,46 +99,52 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSLH>, <&kp BSLH>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_BSLH";
         };
-        
+
         frcd_grav: forced_grave {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp GRAVE>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_GRAVE";
         };
-        
+
         frcd_minus: forced_minus {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp MINUS>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_MINUS";
         };
-        
+
         frcd_sqt: forced_single_quote {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp SQT>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_SQT";
         };
-        
+
         frcd_lbkt: forced_left_bracket {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp LBKT>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_LBKT";
         };
-        
+
         frcd_rbkt: forced_right_bracket {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RBKT>, <&kp RBKT>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_RBKT";
         };
@@ -212,10 +218,10 @@
 
         num+sym {
             bindings = <
-&kp PIPE  &kp TILDE  &kp UNDER      &kp DQT  &kp PLUS     &frcd_eq  &kp LPAR  &kp RPAR       &kp LBRC  &kp RBRC
-&kp N1    &kp N2     &hml LSHFT N3  &kp N4   &kp N5       &kp N6    &kp N7    &hmr LSHFT N8  &kp N9    &kp N0
-&kp BSLH  &kp GRAVE  &kp MINUS      &kp SQT  &kp EQUAL    &kp LBKT  &kp RBKT  &kp LT         &kp GT    &kp FSLH
-                     &none          &mo 6    &none        &none     &none
+&kp PIPE    &kp TILDE   &kp UNDER      &kp DQT    &kp PLUS    &none       &kp LPAR    &kp RPAR       &kp LBRC  &kp RBRC
+&kp N1      &kp N2      &hml LSHFT N3  &kp N4     &kp N5      &kp N6      &kp N7      &hmr LSHFT N8  &kp N9    &kp N0
+&frcd_bslh  &frcd_grav  &frcd_minus    &frcd_sqt  &frcd_eq    &frcd_lbkt  &frcd_rbkt  &kp LT         &kp GT    &kp FSLH
+                        &none          &mo 6      &none       &none       &none
             >;
         };
 
