@@ -94,6 +94,54 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_EQUAL";
         };
+
+        frcd_bslh: forced_backslash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "FORCED_BSLH";
+        };
+        
+        frcd_grav: forced_grave {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "FORCED_GRAVE";
+        };
+        
+        frcd_minus: forced_minus {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp MINUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "FORCED_MINUS";
+        };
+        
+        frcd_sqt: forced_single_quote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp SQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "FORCED_SQT";
+        };
+        
+        frcd_lbkt: forced_left_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "FORCED_LBKT";
+        };
+        
+        frcd_rbkt: forced_right_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "FORCED_RBKT";
+        };
     };
 
     keymap {
