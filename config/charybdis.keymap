@@ -39,7 +39,7 @@
         MB3_combo {
             bindings = <&mkp MB3>;
             key-positions = <16 18>;
-            layers = <1>;
+            layers = <4>;
         };
     };
 
@@ -91,16 +91,7 @@
 &kp Q        &kp W        &kp E           &kp R         &kp T          &kp Y      &kp U         &kp I         &kp O        &kp P
 &hml LGUI A  &hml LALT S  &hml LSHFT D    &hml LCTRL F  &kp G          &kp H      &hmr LCTRL J  &hmr LSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
 &kp Z        &kp X        &kp C           &kp V         &kp B          &kp N      &kp M         &kp COMMA     &kp DOT      &mt SINGLE_QUOTE FSLH
-                          &mt LSHFT BSPC  &lt 1 SPACE   &lt 2 ENTER    &lt 3 DEL  &lt 4 BSPC
-            >;
-        };
-
-        nav {
-            bindings = <
-&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none  &none      &none      &none     &none
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
-&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &none  &none      &none      &none     &none
-                                &mo 3         &none            &none      &none  &none
+                          &mt LSHFT BSPC  &lt 4 SPACE   &lt 1 ENTER    &lt 3 DEL  &lt 4 BSPC
             >;
         };
 
@@ -122,12 +113,21 @@
             >;
         };
 
+        nav {
+            bindings = <
+&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none  &none      &none      &none     &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &none  &none      &none      &none     &none
+                                &mo 2         &none            &none      &none  &none
+            >;
+        };
+
         mouse {
             bindings = <
-&none  &none           &mmv MOVE_UP    &none            &none    &none         &none            &none            &none     &none
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &kp C_VOL_UP  &mt LC(X) LC(Z)  &mt LC(C) LC(V)  &none     &msc SCRL_UP
-&none  &none           &none           &none            &none    &kp C_VOL_DN  &mkp MB1         &mkp MB3         &mkp MB2  &msc SCRL_DOWN
-                       &none           &none            &none    &mkp MB4      &none
+&none           &none           &mmv MOVE_UP    &none            &none              &none         &none            &none            &none      &none
+&msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &kp C_VOL_UP  &mt LC(X) LC(Z)  &mt LC(C) LC(V)  &kp LSHFT  &msc SCRL_UP
+&none           &none           &none           &none            &none              &kp C_VOL_DN  &mkp MB1         &mkp MB3         &mkp MB2   &msc SCRL_DOWN
+                                &none           &none            &none              &mkp MB4      &none
             >;
         };
 
