@@ -95,7 +95,7 @@
             >;
         };
 
-        navigation {
+        nav {
             bindings = <
 &none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none         &none     &none     &none     &none
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &kp C_VOL_UP  &none     &none     &none     &msc SCRL_UP
@@ -104,7 +104,7 @@
             >;
         };
 
-        number {
+        num {
             bindings = <
 &ht_sft LS(GRAVE) GRAVE                &ht_sft LS(N7) N7  &ht_sft LS(N8) N8      &ht_sft LS(N9) N9  &ht_sft LS(N0) N0                          &none  &none  &none  &none  &none
 &ht_sft LS(LEFT_BRACKET) LEFT_BRACKET  &ht_sft LS(N4) N4  &ht_sft LS(N5) N5      &ht_sft LS(N6) N6  &ht_sft LS(RIGHT_BRACKET) RIGHT_BRACKET    &none  &none  &none  &none  &none
@@ -131,7 +131,7 @@
             >;
         };
 
-        layer_5 {
+        fn {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
