@@ -25,7 +25,7 @@
         Language_Change_combo0 {
             bindings = <&kp RALT>;
             key-positions = <11 13>;
-            layers = <0>;
+            layers = <0 8>;
         };
 
         TAB_combo {
