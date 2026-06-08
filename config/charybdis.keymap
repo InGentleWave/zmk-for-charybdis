@@ -91,15 +91,15 @@
 &kp Q        &kp W        &kp E           &kp R         &kp T          &kp Y      &kp U         &kp I         &kp O        &kp P
 &hml LGUI A  &hml LALT S  &hml LSHFT D    &hml LCTRL F  &kp G          &kp H      &hmr LCTRL J  &hmr LSHFT K  &hmr LALT L  &hmr LGUI SEMICOLON
 &kp Z        &kp X        &kp C           &kp V         &kp B          &kp N      &kp M         &kp COMMA     &kp DOT      &mt SINGLE_QUOTE FSLH
-                          &mt LSHFT BSPC  &lt 1 SPACE   &lt 2 ENTER    &lt 3 DEL  &lt 1 BSPC
+                          &mt LSHFT BSPC  &lt 1 SPACE   &lt 2 ENTER    &lt 3 DEL  &lt 4 BSPC
             >;
         };
 
         nav {
             bindings = <
-&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none  &none  &none  &none  &none
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &none  &none  &none  &none  &none
-&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &none  &none  &none  &none  &none
+&none           &kp HOME        &kp LS(END)   &kp PAGE_UP      &kp F2     &none  &none      &none      &none     &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F10    &none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+&none           &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &kp F12    &none  &none      &none      &none     &none
                                 &mo 3         &none            &none      &none  &none
             >;
         };
