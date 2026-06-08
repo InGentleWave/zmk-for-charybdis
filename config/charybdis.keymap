@@ -47,6 +47,14 @@
         };
     };
 
+    macros {
+        to_colemak_tog: to_colemak_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT>, <&tog 8>;
+        };
+    };
+
     behaviors {
         ht_sft: hold_tap_shift {
             compatible = "zmk,behavior-hold-tap";
@@ -227,10 +235,10 @@
 
         colemak {
             bindings = <
-&kp Q        &kp W        &kp F         &kp P         &kp B    &kp J  &kp L         &kp U         &kp Y        &kp SEMI
-&hml LGUI A  &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G    &kp M  &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I  &hmr LGUI O
-&kp Z        &kp X        &kp C         &kp D         &kp V    &kp K  &kp H         &kp COMMA     &kp DOT      &kp FSLH
-                          &none         &none         &none    &none  &none
+&kp Q        &kp W        &kp F         &kp P         &kp B            &kp J      &kp L         &kp U         &kp Y        &kp SEMI
+&hml LGUI A  &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G            &kp M      &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I  &hmr LGUI O
+&kp Z        &kp X        &kp C         &kp D         &kp V            &kp K      &kp H         &kp COMMA     &kp DOT      &kp FSLH
+                          &lt 7 DEL     &lt 1 SPACE   &lt 2 ENTER      &lt 3 DEL  &lt 4 BSPC
             >;
         };
 
