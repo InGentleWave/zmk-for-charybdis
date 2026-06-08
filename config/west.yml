@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/DoctorWangWang
     - name: bunnyspa # zmk-input-processor-threshold
       url-base: https://github.com/bunnyspa
-    - name: zzeneg
+    - name: zzeneg # zmk-raw-hid
       url-base: https://github.com/zzeneg
   projects:
     - name: zmk
@@ -22,6 +22,6 @@ manifest:
       projects:
     - name: zmk-raw-hid
       remote: zzeneg
-      revision: main
+      revision: master
   self:
     path: config
