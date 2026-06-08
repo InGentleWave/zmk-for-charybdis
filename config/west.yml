@@ -21,7 +21,6 @@ manifest:
     - name: zmk-input-processor-threshold
       remote: bunnyspa
       revision: main
-      projects:
     - name: zmk-raw-hid # <-- Raw HID module
       remote: zzeneg
       revision: main
