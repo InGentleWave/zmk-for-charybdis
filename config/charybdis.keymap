@@ -184,7 +184,7 @@
 &kp ESC         &kp HOME        &kp LS(END)   &kp PAGE_UP      &none             &to_colemak_tog  &kp SLCK         &none      &none     &none
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &msc SCRL_UP      &none            &kp LCTRL        &kp LSHFT  &kp LALT  &kp LGUI
 &kp TAB         &kp END         &kp LS(HOME)  &kp PAGE_DOWN    &msc SCRL_DOWN    &none            &kp PAUSE_BREAK  &kp PSCRN  &kp INS   &kp CAPS
-                                &none         &none            &none             &none            &none
+                                &none         &none            &none             &none            &mo 6
             >;
         };
 
