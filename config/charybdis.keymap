@@ -33,11 +33,6 @@
             key-positions = <16 18>;
             layers = <0 1>;
         };
-
-        hrm_r_sft_combo {
-            bindings = <&kp LSHFT>;
-            key-positions = <17 18>;
-        };
     };
 
     macros {
