@@ -33,41 +33,6 @@
             key-positions = <16 18>;
             layers = <0 1>;
         };
-
-        upp_q_combo {
-            bindings = <&kp LS(Q)>;
-            key-positions = <0 10>;
-        };
-
-        upp_w_combo {
-            bindings = <&kp LS(W)>;
-            key-positions = <1 11>;
-        };
-
-        upp_e_combo {
-            bindings = <&kp LS(E)>;
-            key-positions = <2 12>;
-        };
-
-        upp_r_combo {
-            bindings = <&kp LS(R)>;
-            key-positions = <3 13>;
-        };
-
-        upp_t_combo {
-            bindings = <&kp LS(T)>;
-            key-positions = <4 14>;
-        };
-
-        upp_o_combo {
-            bindings = <&kp LS(O)>;
-            key-positions = <8 18>;
-        };
-
-        upp_p_combo {
-            bindings = <&kp LS(P)>;
-            key-positions = <9 19>;
-        };
     };
 
     macros {
@@ -181,6 +146,19 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "FORCED_RBKT";
         };
+
+        hrm_r_sft: home_row_mod_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+            hold-trigger-on-release;
+            label = "HOME_ROW_MOD_SHIFT";
+        };
     };
 
     keymap {
@@ -188,18 +166,18 @@
 
         base {
             bindings = <
-&kp Q          &kp W          &kp E           &kp R           &kp T          &kp Y      &kp U           &kp I           &kp O          &kp P
-&hrm_l LGUI A  &hrm_l LALT S  &hrm_l LSHFT D  &hrm_l LCTRL F  &kp G          &kp H      &hrm_r LCTRL J  &hrm_r LSHFT K  &hrm_r LALT L  &hrm_r LGUI SEMICOLON
-&kp Z          &kp X          &kp C           &kp V           &kp B          &kp N      &kp M           &kp COMMA       &kp DOT        &mt SINGLE_QUOTE FSLH
+&kp Q          &kp W          &kp E           &kp R           &kp T          &kp Y      &kp U           &kp I               &kp O          &kp P
+&hrm_l LGUI A  &hrm_l LALT S  &hrm_l LSHFT D  &hrm_l LCTRL F  &kp G          &kp H      &hrm_r LCTRL J  &hrm_r_sft LSHFT K  &hrm_r LALT L  &hrm_r LGUI SEMICOLON
+&kp Z          &kp X          &kp C           &kp V           &kp B          &kp N      &kp M           &kp COMMA           &kp DOT        &mt SINGLE_QUOTE FSLH
                               &lt 8 DEL       &lt 2 SPACE     &lt 3 ENTER    &lt 4 DEL  &lt 5 BSPC
             >;
         };
 
         colemak {
             bindings = <
-&kp Q          &kp W          &kp F           &kp P           &kp B          &kp J      &kp L           &kp U           &kp Y          &kp SEMI
-&hrm_l LGUI A  &hrm_l LALT R  &hrm_l LSHFT S  &hrm_l LCTRL T  &kp G          &kp M      &hrm_r LCTRL N  &hrm_r LSHFT E  &hrm_r LALT I  &hrm_r LGUI O
-&kp Z          &kp X          &kp C           &kp D           &kp V          &kp K      &kp H           &kp COMMA       &kp DOT        &mt SQT FSLH
+&kp Q          &kp W          &kp F           &kp P           &kp B          &kp J      &kp L           &kp U               &kp Y          &kp SEMI
+&hrm_l LGUI A  &hrm_l LALT R  &hrm_l LSHFT S  &hrm_l LCTRL T  &kp G          &kp M      &hrm_r LCTRL N  &hrm_r_sft LSHFT E  &hrm_r LALT I  &hrm_r LGUI O
+&kp Z          &kp X          &kp C           &kp D           &kp V          &kp K      &kp H           &kp COMMA           &kp DOT        &mt SQT FSLH
                               &lt 8 DEL       &lt 2 SPACE     &lt 3 ENTER    &lt 4 DEL  &lt 5 BSPC
             >;
         };
