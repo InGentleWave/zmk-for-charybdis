@@ -24,25 +24,13 @@
 
         Language_Change_combo0 {
             bindings = <&kp RALT>;
-            key-positions = <12 31>;
+            key-positions = <11 13>;
             layers = <0 1>;
-        };
-
-        TAB_combo {
-            bindings = <&kp TAB>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
-
-        LSFT_Tab_combo {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <10 1 2>;
-            layers = <0>;
         };
 
         Language_Change_combo1 {
             bindings = <&kp RALT>;
-            key-positions = <17 31>;
+            key-positions = <16 18>;
             layers = <0 1>;
         };
     };
