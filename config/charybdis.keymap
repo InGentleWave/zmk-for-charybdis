@@ -197,10 +197,10 @@
 
         num {
             bindings = <
-&ht_sft LS(GRAVE) GRAVE                &ht_sft LS(N7) N7  &ht_sft LS(N8) N8      &ht_sft LS(N9) N9  &ht_sft LS(N0) N0                          &none  &none  &none  &none  &none
-&ht_sft LS(LEFT_BRACKET) LEFT_BRACKET  &ht_sft LS(N4) N4  &ht_sft LS(N5) N5      &ht_sft LS(N6) N6  &ht_sft LS(RIGHT_BRACKET) RIGHT_BRACKET    &none  &none  &none  &none  &none
-&ht_sft LS(MINUS) MINUS                &ht_sft LS(N1) N1  &ht_sft LS(N2) N2      &ht_sft LS(N3) N3  &ht_sft LS(EQUAL) EQUAL                    &none  &none  &none  &none  &none
-                                                          &ht_sft LS(BSLH) BSLH  &mo 7              &none                                      &none  &none
+&ht_sft LS(GRAVE) GRAVE                &ht_sft LS(N7) N7  &ht_sft LS(N8) N8      &ht_sft LS(N9) N9  &ht_sft LS(N0) N0                          &none   &none  &none  &none  &none
+&ht_sft LS(LEFT_BRACKET) LEFT_BRACKET  &ht_sft LS(N4) N4  &ht_sft LS(N5) N5      &ht_sft LS(N6) N6  &ht_sft LS(RIGHT_BRACKET) RIGHT_BRACKET    &none   &none  &none  &none  &none
+&ht_sft LS(MINUS) MINUS                &ht_sft LS(N1) N1  &ht_sft LS(N2) N2      &ht_sft LS(N3) N3  &ht_sft LS(EQUAL) EQUAL                    &none   &none  &none  &none  &none
+                                                          &ht_sft LS(BSLH) BSLH  &mo 7              &none                                      &tog 9  &none
             >;
         };
 
@@ -246,6 +246,15 @@
 &kp N1      &kp N2      &hrm_l LSHFT N3  &kp N4     &kp N5      &kp N6      &kp N7      &hrm_r LSHFT N8  &kp N9    &kp N0
 &frcd_bslh  &frcd_grav  &frcd_minus      &frcd_sqt  &frcd_eq    &frcd_lbkt  &frcd_rbkt  &kp LT           &kp GT    &kp FSLH
                         &none            &mo 7      &none       &none       &none
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans
             >;
         };
 
@@ -303,5 +312,12 @@
         };*/
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tog_num+sym {
+            if-layers = <3 9>;
+            then-layer = <8>;
+        };
+    };
 };
