@@ -245,7 +245,7 @@
 &kp PIPE    &kp TILDE   &kp UNDER        &kp DQT    &kp PLUS    &none       &kp LPAR    &kp RPAR         &kp LBRC  &kp RBRC
 &kp N1      &kp N2      &hrm_l LSHFT N3  &kp N4     &kp N5      &kp N6      &kp N7      &hrm_r LSHFT N8  &kp N9    &kp N0
 &frcd_bslh  &frcd_grav  &frcd_minus      &frcd_sqt  &frcd_eq    &frcd_lbkt  &frcd_rbkt  &kp LT           &kp GT    &kp FSLH
-                        &none            &mo 7      &none       &none       &none
+                        &none            &mo 7      &none       &tog 9      &none
             >;
         };
 
